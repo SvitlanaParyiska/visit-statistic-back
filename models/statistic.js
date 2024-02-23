@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 
-const statisticSchema = new Schema({
+const statSchema = new Schema({
   totalVisits: {
     type: String,
     required: true,
@@ -11,6 +11,6 @@ const statisticSchema = new Schema({
   },
 });
 
-const Statistic = model("stat", statisticSchema);
+const Stat = model("stat", statSchema);
 
-module.exports = Statistic;
+module.exports = Stat;
